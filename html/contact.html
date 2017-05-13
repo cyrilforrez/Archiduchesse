@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
         <link rel="icon" href="../favicon.ico">
+
     </head>
 
     <body>
@@ -39,52 +40,69 @@
             <div><a href=""></a></div>
         </header>
 
-<main>
-    <div>
-        <article>
-            <h1></h1>
-            <p></p>
+<main class="container">
+    <div class="row">
+        <article class="col-lg-4-offset-6">
+            <h1>Archiduchesse</h1>
+            <p>L'équipe d'Archiduchesse et la pour répondre a toutes vos questions concernant
+            <br>Nos produits, la livraison, probléme de taille, etc... </p>
         </article>
-        <form action="">
-            <h2></h2>
-            <p><label for="civilité">civilite</label>
-            <br><select name="civilité" id="civilité">
+        <div class="form-group">
+        <form class="form-horizontal col-lg-3" method="post" action="traitement.php">
+            <h2>Vos Coordonnées</h2>
+            <p><label for="civilité">Civilité</label>
+            <select name="civilité" id="civilité">
                 <option value="Mr">Mr</option>
                 <option value="Mlle">Mlle</option>
                 <option value="Mme">Mme</option>
             </select></p>
-            <p></p>
-            <label for=""></label>
-            <input type="text">
-            <p></p>
-            <label for=""></label>
-            <input type="text">
-            <p></p>
-            <label for=""></label>
-            <input type="tel">
-            <p></p>
-            <label for=""></label>
-            <input type="mail">
-            <h2></h2>
-            <p></p>
-            <label for=""></label>
-            <input type="text">
-            <p></p>
-            <label for=""></label>
-            <input type="text">
-            <p></p>
-            <label for=""></label>
-            <input type="text">
-            <p></p>
-            <label for=""></label>
-            <input type="text">
-            <h2></h2>
-            <p></p>
-            <label for=""></label>
-            <input type="textarea">
-            <input type="submit">
+            <p>
+            <label for="nom">Votre Nom</label>
+            <input type="text" name="Nom" placeholder="Ex : Forrez" size="30" maxlength="10" /></p>
+            <p>
+            <label for="Prenom">Votre Prénom</label>
+            <input type="text" name="prénom" id="prénom" placeholder="Ex : Cyril" size="30" maxlength="10" ></p>
+            <p>
+            <label for="tel">Votre Téléphone</label>
+            <input type="tel" name="tel" id="tel" placeholder="Ex :06/84/32/55/33" size="30" maxlength="10"></p>
+            <p>
+            <label for="ameil">Votre E-mail</label>
+            <input type="mail" name="email" id="email" placeholder="Ex : cyrilforrez@gmail.com" size="30" maxlength="10"></p>
+            <h2>Adresse</h2>
+            <p>
+            <label for="numeros">Numéro</label>
+            <input type="text" name="numéro" id="numéro" placeholder="Ex : 78" size="30" maxlength="10"></p>
+            <p>
+            <label for="adresse">Adresse</label>
+            <input type="text" name="Adresse" id="Adresse" placeholder="Ex : rue leon marlot" size="30" maxlength="30"></p>
+            <p>
+            <label for="complement-adresse">Complément d'adresse</label>
+            <input type="text" name="Complément-adresse" id="Complément-adresse" placeholder="Ex : appt 456" size="30" maxlength="10"></p>
+            <p>
+            <label for="pays">Pays</label>
+            <input type="text" name="Pays" id="Pays" placeholder="Ex : France" size="30" maxlength="10"></p>
+            <h2>Votre Message</h2>
+            <p>
+            <label for="question"></label>
+            <textarea name="question" id="question" rows="5" cols="30"></textarea></p>
+            <input type="submit" value="Envoyer votre message">
         </form>
-    </div>
+        </div>
+
+         <iframe class="col-lg-9" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2528.4632885159413!2d3.191529787905811!3d50.67422491464251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47c3287cffc4751f%3A0x5a28c76910a7ac19!2sRue+L%C3%A9on+Marlot%2C+59100+Roubaix!3m2!1d50.6745666!2d3.1917399!5e0!3m2!1sfr!2sfr!4v1490867155914" width="800" height="650" style="border:0" allowfullscreen></iframe>
+        
+       
+        <div class="col-lg-4">
+         <h2>coordonnées du siege social</h2>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i>94 rue Léon Marlot <br>59100 Roubai</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>tel.France 03 25 21 58 59</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>tel.Belgique 0 726 589 25</p>
+        </div>
+        <div class="col-lg-4">
+         <h2>Horaires</h2>
+            <p>Du lundi au vendredi <br>De 9h à 17h30</p>
+        </div>
+        </div>
 </main>
 
         <footer>
@@ -99,7 +117,7 @@
             <a href=""></a>
         </footer>
 
-
+        <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/jquery-3.2.1.min.js"></script>
     </body>
