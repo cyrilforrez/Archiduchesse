@@ -31,4 +31,7 @@
     background-image: url(../img/pc/imgaccueil/bg.png);
 }
 
+.no-margin-left > [class*='col-'] {
+    margin-left: 0;
+}
 
